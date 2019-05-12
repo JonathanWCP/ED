@@ -106,9 +106,9 @@ public class JLinkedList {
 	//exibe a lista
 	public void show() {
 		if (isEmpty()) {
-			System.out.println("Lista vazia!"); 
+			System.out.print("Lista vazia!"); 
 		} else {
-			System.out.print("A lista é: ");
+			System.out.print("A lista: ");
 			Node current = head;
 			while (current != null) {
 				System.out.print(current.getElement().toString() + " ");

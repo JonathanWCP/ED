@@ -1,9 +1,6 @@
 # Compiled class file
 *.class
 
-# Bin folder
-*/bin
-
 # Log file
 *.log
 
