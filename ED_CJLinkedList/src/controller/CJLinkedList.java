@@ -1,10 +1,11 @@
-/*Objetivo:    	Classe contendo metodos para adicionar, remover e alterar uma lista circular dupla. 
+/*Objetivo:    	Implemente sobre a lista circular simplesmente encadeada os seguintes metodos:
+				isEmpty(), getFirst(), getLast(),
+				insertFirst(), insertLast(), removeFirst(), removeLast(), show().
 
                 Este codigo fonte sera salvo no arquivo CJLinkedList.java
    Programador: Jonathan Willian Castro Pinheiro
-   Data:        15-04-2019
+   Data:        12/05/2019
 */
-
 package controller;
 
 public class CJLinkedList {

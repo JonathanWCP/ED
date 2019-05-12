@@ -1,21 +1,22 @@
-/* Objetivo:    ... 
+/* Objetivo:    Considerando que a lista encadeada/ligada tenha apenas a variável
+				head para o primeiro elemento, como apresentado abaixo,
+				implemente as operações isEmpty(), getFirst(), getLast(),
+				insertFirst(), insertLast(), removeFirst(), removeLast(), show(). 
 
                 Este codigo fonte sera salvo no arquivo JLinkedList.java
 
    Programador: Jonathan Willian Castro Pinheiro
-   Data:        19:03:2019
+   Data:        12/05/2019
 */
 
 package controller;
 public class JLinkedList {
 	protected Node head; 		//node cabeca da lista
-	protected Node tail;		//node cauda da lista
 	protected long size;		//numero de nodes na lista
 	
 	//construtor padrao que cria uma lista vazia (null)
 	public JLinkedList() {
 		head = null;
-		tail = null;
 		size = 0;
 	}
 	
@@ -37,7 +38,11 @@ public class JLinkedList {
 		if (isEmpty()) {
 			throw new UnderflowException();
 		}
-		return tail;
+		Node current = head;
+		while (current.getNext() != null) {
+			current = current.getNext();
+		}
+		return current;
 	}
 	
 	//inserir elementos na lista
@@ -47,19 +52,19 @@ public class JLinkedList {
 		novoNode.setNext(head); 
 		head = novoNode;
 		size++;
-		if (size == 1) {
-			tail = head;
-		}
 	}
 	
 	//inserir no fim da lista
-	public void insertLast(Node novoNode) {
+	public void insertLast(Node newNode) {
 		if (isEmpty()) {
-			insertFirst(novoNode);
+			insertFirst(newNode);
 		} else {
-			novoNode.setNext(null);
-			tail.setNext(novoNode);
-			tail = novoNode;
+			Node current = head;
+			while (current.getNext() != null) {
+				current = current.getNext();
+			}
+			newNode.setNext(null);
+			current.setNext(newNode);
 			size++;
 		}
 	}
@@ -72,8 +77,8 @@ public class JLinkedList {
 			throw new UnderflowException();
 		}
 		Node removedItem = head;
-		if (head == tail) {
-			head = tail = null;
+		if (size == 1) {
+			head = null;
 		} else {
 			head = head.getNext();
 		}
@@ -87,15 +92,15 @@ public class JLinkedList {
 		if (isEmpty()) {
 			throw new UnderflowException();
 		}
-		Node removedItem = tail;
-		if (head == tail) {
-			head = tail = null;
+		Node removedItem = head;
+		if (size == 1) {
+			head = null;
 		} else {
 			Node current = head;
-			while (current.getNext() != tail) {
+			while (current.getNext().getNext() != null) {
 				current = current.getNext();
 			}
-			tail = current;
+			removedItem = current.getNext();
 			current.setNext(null);
 		}
 		size --;

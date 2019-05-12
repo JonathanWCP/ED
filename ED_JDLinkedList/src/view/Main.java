@@ -1,3 +1,11 @@
+/*Objetivo:    	Implemente um método em Java para remover um node, depois de
+				uma posição especificada, em uma lista duplamente
+				encadeada/ligada (item 8 do menu).
+
+                Este codigo fonte sera salvo no arquivo Main.java
+   Programador: Jonathan Willian Castro Pinheiro
+   Data:        12/05/2019
+*/
 package view;
 
 import javax.swing.JOptionPane;
@@ -72,6 +80,7 @@ public class Main {
 				} catch (UnderflowException e) {
 					e.printStackTrace();
 				}
+				JOptionPane.showMessageDialog(null, "Node da posicao " + (op+1) + " removido com sucesso!", null, JOptionPane.INFORMATION_MESSAGE);
 				break;
 
 			case 9:

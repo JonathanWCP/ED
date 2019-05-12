@@ -1,3 +1,11 @@
+/*Objetivo:    	Implemente sobre a lista circular duplamente encadeada os seguintes metodos:
+			 	isEmpty(), getFirst(), getLast(),
+				insertFirst(), insertLast(), removeFirst(), removeLast(), show().
+
+                Este codigo fonte sera salvo no arquivo CJDLinkedList.java
+   Programador: Jonathan Willian Castro Pinheiro
+   Data:        12/05/2019
+*/
 package controller;
 
 public class CJDLinkedList {

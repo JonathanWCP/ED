@@ -1,16 +1,10 @@
-/*Objetivo:    	Implemente sobre a lista simples circular os seguintes metodos:
-				isEmpty
-				getFirst
-				getLast
-				insertFirst
-				insertLast
-				removeFirst
-				removeLast
-				show
+/*Objetivo:    	Implemente sobre a lista circular simplesmente encadeada os seguintes metodos:
+				isEmpty(), getFirst(), getLast(),
+				insertFirst(), insertLast(), removeFirst(), removeLast(), show().
 
                 Este codigo fonte sera salvo no arquivo Main.java
    Programador: Jonathan Willian Castro Pinheiro
-   Data:        15-04-2019
+   Data:        12/05/2019
 */
 package view;
 
@@ -27,12 +21,12 @@ public class Main {
 		CJLinkedList lista = new CJLinkedList();
 		while (opc != 10) {
 			opc = Integer.parseInt(JOptionPane.showInputDialog("----- MENU PRINCIPAL -----" 
-							+ "\n1 - Adicionar item no inicio (head) " 
-							+ "\n2 - Adicionar item no final (tail)"
+							+ "\n1 - Adicionar item no inicio" 
+							+ "\n2 - Adicionar item no final"
 							+ "\n3 - Remover item do inicio" 
 							+ "\n4 - Remover item do final"
 							+ "\n5 - Verificar tamanho da lista" 
-							+ "\n6 - Verificar se lista esta vazia"
+							+ "\n6 - Verificar se a lista esta vazia"
 							+ "\n7 - Exibir lista" 
 							+ "\n8 - Coletar primeiro ou ultimo" 
 							+ "\n9 - Sair"));

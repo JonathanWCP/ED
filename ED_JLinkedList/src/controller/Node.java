@@ -1,9 +1,12 @@
-/* Objetivo:    ... 
+/* Objetivo:    Considerando que a lista encadeada/ligada tenha apenas a variável
+				head para o primeiro elemento, como apresentado abaixo,
+				implemente as operações isEmpty(), getFirst(), getLast(),
+				insertFirst(), insertLast(), removeFirst(), removeLast(), show(). 
 
                 Este codigo fonte sera salvo no arquivo Node.java
 
    Programador: Jonathan Willian Castro Pinheiro
-   Data:        19:03:2019
+   Data:        12/05/2019
 */
 
 package controller;
@@ -14,9 +17,9 @@ public class Node {
 	private Node next; // A referencia do Node
 
 	// construtor
-	public Node(String e, Node n) {
-		element = e;
-		next = n;
+	public Node(String element, Node next) {
+		this.element = element;
+		this.next = next;
 	}
 
 	// cria um node com referencia e elemento null

@@ -1,19 +1,20 @@
-/*Objetivo:    	Classe com construtor do Node 
+/*Objetivo:    	Implemente sobre a lista circular simplesmente encadeada os seguintes metodos:
+				isEmpty(), getFirst(), getLast(),
+				insertFirst(), insertLast(), removeFirst(), removeLast(), show().
 
                 Este codigo fonte sera salvo no arquivo Node.java
    Programador: Jonathan Willian Castro Pinheiro
-   Data:        15-04-2019
+   Data:        12/05/2019
 */
-
 package controller;
 
 public class Node {
 	private String element;
 	private Node next;
 	
-	public Node (String e, Node n) {
-		element = e;
-		next = n;
+	public Node (String element, Node next) {
+		this.element = element;
+		this.next = next;
 	}
 	
 	public Node (String element) {

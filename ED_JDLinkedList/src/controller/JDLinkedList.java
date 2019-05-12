@@ -1,3 +1,11 @@
+/*Objetivo:    	Implemente um método em Java para remover um node, depois de
+				uma posição especificada, em uma lista duplamente
+				encadeada/ligada (item 8 do menu).
+
+                Este codigo fonte sera salvo no arquivo JDLinkedList.java
+   Programador: Jonathan Willian Castro Pinheiro
+   Data:        12/05/2019
+*/
 package controller;
 
 public class JDLinkedList {
