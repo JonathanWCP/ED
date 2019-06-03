@@ -1,4 +1,6 @@
-/*Objetivo:    	...
+/*Objetivo:    	Implemente uma operaçao/metodo para buscar um
+				determinado elemento em um arvore binaria de busca,
+				retornando true se encontrar e false caso contrario.
 				
 				Este codigo fonte sera salvo no arquivo Node.java
    Programador: Jonathan Willian Castro Pinheiro
