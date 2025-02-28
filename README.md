@@ -1,13 +1,10 @@
-# Estrutura de Dados
-  -Lista simplesmente encadeada (JLinkedList) <br/>
-  -Lista duplamente encadeada (JDLinkedList) <br/>
-  -Lista simplesmente encadeada circular (CJLinkedList) <br/>
-  -Lista duplamente encadeada circular (CJDLinkedList) <br/>
-  -Pilha Estática (StaticStack) <br/>
-  -Pilha Dinâmica (DynamicStack) <br/>
-  -Fila Estática (StaticQueue) <br/>
-  -Fila Dinâmica (DynamicQueue) <br/>
-  -Árvore Binária (BinaryTree) <br/>
-
-<i>Observações: Nenhuma atividade inclui DIRETAMENTE os conceitos ou padrões de desenvolvimento a seguir: <br />
-	-Orientação à Objeto <br />
+# Data Structures
+  -Simple Linked List (JLinkedList) <br/>
+  -Double Linked List (JDLinkedList) <br/>
+  -Simple Circular Linked List (CJLinkedList) <br/>
+  -Double Circular Linked List (CJDLinkedList) <br/>
+  -Static Stack <br/>
+  -Dynamic Stack <br/>
+  -Static Queue <br/>
+  -Dynamic Queue <br/>
+  -Binary Tree <br/>
